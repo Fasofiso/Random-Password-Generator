@@ -88,3 +88,24 @@ function generate() {
   rectangle3.textContent = password.substring(21, 31);
   rectangle4.textContent = password.substring(31, 41);
 }
+
+function copyToClipboard(rectangle) {
+  let rectangleElement;
+  if (rectangle === "1") {
+    rectangleElement = rectangle1;
+  }
+  if (rectangle === "2") {
+    rectangleElement = rectangle2;
+  }
+  if (rectangle === "3") {
+    rectangleElement = rectangle3;
+  } else {
+    rectangleElement = rectangle4;
+  }
+  navigator.clipboard.writeText(rectangleElement.textContent);
+  alert(
+    "Password " +
+      rectangleElement.textContent +
+      " has been copied to the clipboard."
+  );
+}
