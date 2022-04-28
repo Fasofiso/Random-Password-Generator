@@ -1,0 +1,127 @@
+body{
+position: absolute;
+width: 550px;
+height: 550px;
+left: 61px;
+top: 64px;
+background: #FFF1F2;
+}
+
+#heading{
+    position: absolute;
+width: 354px;
+height: 80px;
+left: 52px;
+top: 110px;
+font-family: 'Karla';
+font-style: normal;
+font-weight: 800;
+font-size: 40px;
+line-height: 40px;
+letter-spacing: -0.05em;
+color:#E11D48;
+
+}
+#expo{
+    position: absolute;
+width: 372px;
+height: 28px;
+left: 52px;
+top: 200px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+color: #FB7185;
+
+}
+ button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 17px 9px 15px;
+    position: absolute;
+    width: 223px;
+    height: 42px;
+    left: 52px;
+    top: 279px;
+    background: #F43F5E;
+    color: whitesmoke;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+ }
+
+ 
+#rectangle1{
+position: absolute;
+width: 211px;
+height: 39px;
+left: 52px;
+top: 391px;
+color:#E11D48;
+background: #374151;
+border-radius: 6px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 32px;
+text-align: center;
+
+}
+#rectangle2{
+    position: absolute;
+width: 211px;
+height: 39px;
+left: 287px;
+top: 391px;
+color:#E11D48;
+background: #374151;
+border-radius: 6px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 32px;
+text-align: center;
+}
+#rectangle3{
+    position: absolute;
+width: 211px;
+height: 39px;
+left: 52px;
+top: 457px;
+color:#E11D48;
+background: #374151;
+border-radius: 6px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 32px;
+text-align: center;
+}
+#rectangle4{
+    position: absolute;
+width: 211px;
+height: 39px;
+left: 287px;
+top: 457px;
+color:#E11D48;
+background: #374151;
+border-radius: 6px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 32px;
+text-align: center;
+}
+
