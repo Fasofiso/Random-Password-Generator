@@ -3,6 +3,8 @@ let rectangle2 = document.getElementById("rectangle2");
 let rectangle3 = document.getElementById("rectangle3");
 let rectangle4 = document.getElementById("rectangle4");
 
+const inputLength = document.getElementById("lengthInput");
+
 let characters = [
   "a",
   "b",
@@ -78,15 +80,35 @@ let characters = [
   "*",
 ];
 
+let passwordLength = 10;
+
+function changePasswordLength(event) {
+  if (event.target.value < 10) {
+    inputLength.value = 10;
+  } else if (event.target.value > 20) {
+    inputLength.value = 20;
+  }
+  passwordLength = event.target.value;
+}
+
 function generate() {
   let password = "";
-  for (let i = 0; i < 41; i++) {
+  for (let i = 0; i < passwordLength * 4; i++) {
     password += characters[Math.floor(Math.random() * characters.length)];
   }
-  rectangle1.textContent = password.substring(0, 11);
-  rectangle2.textContent = password.substring(11, 21);
-  rectangle3.textContent = password.substring(21, 31);
-  rectangle4.textContent = password.substring(31, 41);
+  rectangle1.textContent = password.substring(0, passwordLength);
+  rectangle2.textContent = password.substring(
+    passwordLength,
+    passwordLength * 2
+  );
+  rectangle3.textContent = password.substring(
+    passwordLength * 2,
+    passwordLength * 3
+  );
+  rectangle4.textContent = password.substring(
+    passwordLength * 3,
+    passwordLength * 4
+  );
 }
 
 function copyToClipboard(rectangle) {
