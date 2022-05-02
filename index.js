@@ -1,11 +1,11 @@
-let rectangle1 = document.getElementById("rectangle1");
-let rectangle2 = document.getElementById("rectangle2");
-let rectangle3 = document.getElementById("rectangle3");
-let rectangle4 = document.getElementById("rectangle4");
+const rectangle1 = document.getElementById("rectangle1");
+const rectangle2 = document.getElementById("rectangle2");
+const rectangle3 = document.getElementById("rectangle3");
+const rectangle4 = document.getElementById("rectangle4");
 
 const inputLength = document.getElementById("lengthInput");
 
-let characters = [
+const characters = [
   "a",
   "b",
   "c",
@@ -91,7 +91,7 @@ function changePasswordLength(event) {
   passwordLength = event.target.value;
 }
 
-function generate() {
+function generatePassword() {
   let password = "";
   for (let i = 0; i < passwordLength * 4; i++) {
     password += characters[Math.floor(Math.random() * characters.length)];
